@@ -1,4 +1,4 @@
-const API_BASE = 'https://3536jz-8185.csb.app'
+const API_BASE = 'https://n9wmp8-8280.csb.app'
 
 export const authAPI = {
   login: async (credentials) => {
@@ -60,7 +60,7 @@ export const dashboardAPI = {
   getShowtimes: () => fetch(`${API_BASE}/showtimes`).then(res => res.json()),
   getCinemas: () => fetch(`${API_BASE}/cinemas`).then(res => res.json()),
   addFilm: async (filmData) => {
-    const response = await fetch('http://localhost:3001/films', {
+    const response = await fetch('https://n9wmp8-8280.csb.app/films', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
